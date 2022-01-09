@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+
+.incomplete {
+  background-color: rgb(251, 23, 53);
+
+}
+
+.complete {
+  background-color: green;
+}
+
+.vwvh100 {
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+.bg-primary {
+  background-color: rgb(230, 228, 228);
+}
+
+.bg-secondary {
+  background-image: radial-gradient(circle, #fb1735, #e41430, #cd112a, #b70e25, #a10b20);
+}
+
+.topBar {
+  width: 100%;
+  height: 7vh;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.m-left-start {
+  margin-left: 20px;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-3Col {
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 15vh;
+  gap: 10px;
+}
+
+
+
+.bg-white {
+  background-color: rgb(255, 255, 255);
+}
+
+.bg-title {
+  background-color: rgb(251, 23, 53);
+}
+
+.white-font {
+  color: rgb(235, 235, 235);
+}
+
+.title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.letter-spacing {
+  letter-spacing: 1px;
+
+}
+
+.overflow-h {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.m-auto {
+  margin: auto auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.inline {
+  display: inline;
+}
+
+.float-right {
+  float: right;
+}
+
+.j-space {
+  justify-content: space-between;
+}
+
+.j-end {
+  justify-content: flex-end;
+}
+
+.mr-15 {
+  margin-right: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.closeicon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  right: 20px;
+  top: 10px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.big-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.mxw-80 {
+  max-width: 80%;
+}
+
+.Modal {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 50vw;
+  height: 50vh;
+  background-color: rgb(231, 231, 231);
+  border: 2px solid rgba(251, 23, 53, 0.671);
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 166, 166, 0.322);
+}
+
+.h-10 {
+  height: 10%;
+}
+
+.h-3vh {
+  height: 3%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-90 {
+  height: 90%
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.grid-4row {
+  grid-template-rows: 0.02fr 0.25fr 0.62fr 0.13fr;
+}
+
+input {
+  text-align: justify;
+}
+
+.p-5 {
+  padding: 5px
+}
+
+.update-btn {
+  display: inline-block;
+  width: 15%;
+  height: 65%;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.round-corners {
+  border-radius: 1.2vh;
+  -webkit-border-radius: 1.2vh;
+  -moz-border-radius: 1.2vh;
+  -ms-border-radius: 1.2vh;
+  -o-border-radius: 1.2vh;
+}
+
+.shadow {
+  box-shadow: 5px 5px #7a7a7a3d;
+}
+
+@media only screen and (max-width: 968px) {
+  .grid-3Col {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 15vh;
+    gap: 10px;
+  }
+
+  .update-btn {
+    display: inline-block;
+    width: 25%;
+    height: 65%;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+
+  .Modal {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 80vw;
+    height: 60vh;
+    background-color: rgb(231, 231, 231);
+    border: 2px solid rgba(251, 23, 53, 0.671);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .grid-3Col {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 15vh;
+    gap: 10px;
+  }
+
+  .update-btn {
+    display: inline-block;
+    width: 25%;
+    height: 65%;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+
+  .Modal {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 85vw;
+    height: 50vh;
+    background-color: rgb(231, 231, 231);
+    border: 2px solid rgba(251, 23, 53, 0.671);
+  }
+}
